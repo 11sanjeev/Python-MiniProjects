@@ -5,7 +5,7 @@ highestRange = input("||=> Please enter highest range of number in which you wan
 if highestRange.isdigit():
     highestRange = int(highestRange)
 else:
-    print("||=> Please enter a positive number !")
+    print("!!=> Please enter a positive number !")
     quit()
 #generate a random number in given range and store that in varible randNum
 randNum = random.randint(0,highestRange)
@@ -15,6 +15,7 @@ guesses = 0
 score = 20
 while True:
     guesses+=1
+    # Take input from user and store that value in variable for camparing with random number
     userGuess = input("||=> Make a choice between 0 to {0:d} :".format(highestRange))
     if userGuess.isdigit():
         userGuess = int(userGuess)
