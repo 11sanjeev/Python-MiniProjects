@@ -1,3 +1,4 @@
+import sys
 #Function for taking user data in list for writing that data in file.
 def addName ():
     dataList = []
@@ -53,20 +54,24 @@ while True:
     print("=> 4. For creating a new file. ")
     print("=> 5. For deleting data from a file!!")
     print("=> 6. For exit !!")
+    try:
+        selectMode = int(input("||->Enter your choice (1/2/3/4/5/6) :"))
 
-    selectMode = int(input("||->Enter your choice (1/2/3/4/5/6) :"))
-
-    if selectMode == 1:        
-        readFile(nameFile())
-    elif selectMode == 2:
-        appnedFile(nameFile())
-    elif selectMode == 3 or selectMode == 4:
-        writeFile(nameFile())
-    elif selectMode == 5:
-        removeDataOfFile(nameFile())
-    elif selectMode == 6:
-        print("\n**-> Hope you performed all operations on your file. Bye Bye!\n")
-        break
-    else:
-        print("!! Oops! Please make correct choice.........\n\n")
-
+        if selectMode == 1:        
+            readFile(nameFile())
+        elif selectMode == 2:
+            appnedFile(nameFile())
+        elif selectMode == 3 or selectMode == 4:
+            writeFile(nameFile())
+        elif selectMode == 5:
+            removeDataOfFile(nameFile())
+        elif selectMode == 6:
+            print("\n**-> Hope you performed all operations on your file. Bye Bye!\n")
+            break
+        else:
+            print("!! Oops! Please make correct choice.........\n")
+    except:
+        print("\nOops! Something went wrong wrong!!!")
+        error = sys.exc_info()[0]
+        print("There is an error that is :"+str(error))
+        print("Please give correct information !!...")
