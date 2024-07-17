@@ -28,10 +28,12 @@ def hcfValue(value1,value2):
             if(value1%divisible==0 and value2%divisible==0):
                 hcf = divisible
     print("\n=>* HCF is %d*"%hcf)
-#Take user input for performing desired operation and call function according to user choice.
+#Take user input for performing desired operation 
+num1 = int(input("\nEnter first digit :"))
+num2 = int(input("Enter second digit :"))
+#Call function according to user choice.
 while True:
-    num1 = int(input("\nEnter first digit :"))
-    num2 = int(input("Enter second digit :"))
+    
     print("\n****-> Select your option *****")
     print("=> 1. To calculate LCM ")
     print("=> 2. To calculate HCF ")
