@@ -1,6 +1,6 @@
 listToSort = []
 while True:
-    userInput = input("Enter values for sorting:")
+    userInput = input("Enter values for sorting (Enter Done when you done):")
     if userInput == "done" or userInput == "DONE" or userInput == "Done":
         break
     listToSort.append(userInput)
