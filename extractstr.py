@@ -1,5 +1,5 @@
 # This program extract character and numbers from a string and store characters and addition of all numbers
-userChoice =input("Want to enter a string(Yes/NO):").capitalize()
+userChoice =input("Want to enter a string(Yes/No):").capitalize()
 if userChoice == 'Yes':
     userString = input("Enter a string with formed of mixed numbers and characters (ex:-dwq234jj43jl): ")
 else:
