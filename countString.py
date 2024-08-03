@@ -1,3 +1,4 @@
+"""Can use string like - repeat repeat this string string with with multiple multiple word word repetition repetition precisely precisely"""
 import sys
 # Python Program to Count words in a String using Dictionary
 def freq(string):
@@ -29,7 +30,7 @@ user_choice = input("=> Want to count for complete String (Enter-'c') or for a s
 if user_choice == 'c':
     freq(user_Input)
 elif user_choice == 'w':
-    specific_word = input("Enter the String in which you want to count :")
+    specific_word = input("Enter the word for which you want to count :")
     letterCount(user_Input,specific_word)
 else:
     print("***!!! Choose wrong option!")
